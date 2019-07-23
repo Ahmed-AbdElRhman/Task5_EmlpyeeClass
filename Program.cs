@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Task4_creat_class1
 {
 
@@ -12,6 +13,7 @@ namespace Task4_creat_class1
            Employee[] employee=new Employee[num];Employee searched_Employee;//string chosse="";
            //----------
 
+           
            for (int i = 0; i <num; i++)
            {
                employee[i]=new Employee(i+1);
@@ -24,7 +26,6 @@ namespace Task4_creat_class1
              input_Split=input.Split(",");
              
              searched_Employee=Functions.giveMeSearch(employee ,input_Split[0],input_Split[1]);
-
              if(searched_Employee!=null) 
               {
                 Console.WriteLine("-----------------------");
